@@ -14,6 +14,7 @@ warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
 data=pd.read_csv('data.csv')
 
 frame=pd.DataFrame(data)
+frame=frame.fillna(0)
 
 class finder(object):
 
